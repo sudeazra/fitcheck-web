@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitCheck - Akış</title>
+  <link rel="icon" type="image/png" href="images/apple.png">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>FitCheck</h1>
+
+    <nav> <!-- menu -->
+
+      <ul>
+        <li><a href="feed.html">Akış</a></li>
+        <li><a href="profile.html">Profilim</a></li>
+        <li><a href="history.html">Geçmiş</a></li>
+
+        <li><a href="index.html">Çıkış</a></li> 
+        <!-- giriş sayfasına gidiyor degişecek -->
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--kombin yukleme-->
+    <section>
+      <h2>Bugünün kombinini paylaş</h2>
+
+      <form>
+        <!-- action yok ama değişecek -->
+        <p>
+          <label for="fit-photo">Fotoğraf seç</label><br>
+          <input type="file" id="fit-photo" name="fit-photo" accept="image/*" required>
+          <!--
+            type="file": bilgisayardan/telefondan dosya seçtirir.
+            accept="image/*": sadece resim dosyaları seçilebilir.
+          -->
+        </p>
+
+        <p>
+          <label for="fit-caption">Açıklama (isteğe bağlı)</label><br>
+          <input type="text" id="fit-caption" name="fit-caption" placeholder="ör. bugün sade takıldım">
+        </p>
+
+        <button type="submit">Paylaş</button>
+      </form>
+    </section>
+
+
+    <!-- ================= 2. BÖLÜM: GÜNÜN KAZANANLARI ================= -->
+    <section>
+        <h2>Dünün kazananları</h2>
+
+        <!--
+            sahte veri, 7.haftada değişecek
+        -->
+
+        <table>
+          <thead>
+            <!-- -->
+            <tr>
+              <th>Sıra</th>
+              <th>Kullanıcı</th>
+              <th>Oy</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <!-- ilerde js satırları buraya veri yazcak-->
+            <tr>
+              <td>1</td>
+              <td>sude</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>celal</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ali</td>
+              <td>2</td>
+            </tr>
+            <!-- beraberlik ornegi bu -->
+          </tbody>
+        </table>
+      </section>
+
+
+    <!-- ================= 3. BÖLÜM: BUGÜNÜN KOMBİNLERİ ================= -->
+    <section>
+      <h2>Bugünün kombinleri</h2>
+
+      <!-- ---------- KOMBİN KARTI 1 ---------- -->
+      <article>
+        <!--
+          article: kendi başına anlamlı, tek bir içerik parçası (blog yazısı, gönderi gibi).
+          Her kombin bir "gönderi" olduğu için article kullanıyoruz.
+          İleride bu kartı JS bir şablon gibi tekrar tekrar üretecek.
+        -->
+
+        <header>
+          <img src="images/avatars/sude.jpg" alt="sude profil fotoğrafı" width="40" height="40">
+        <!-- sampe 1 sude olsun pp de -->
+          <a href="profile.html">sude</a>
+          <!--  bu link profile.html?user=sude olacak-->
+          <small>bugün 09:41</small>
+        </header>
+
+        <img src="images/fits/fit1.jpg" alt="sude'nin kombini" width="300">
+
+
+        <p>Bugün sade takıldım</p>
+
+        <!-- oylama mekaniği (6. 7. hafta, JS) -->
+        <p>
+          <button type="button">Günün en iyisi seç</button>
+          <!-- formu gonermiyor.. js ile olacak -->
+          
+          <span>3 oy</span>
+          <!--  -->
+        </p>
+
+        <!-- Yorumlar -->
+        <section>
+          <h3>Yorumlar</h3>
+          <ul>
+            <li>
+              <b>celal:</b> renkler çok iyi uymuş
+              <button type="button">Yanıtla</button>
+            </li>
+            <li>
+              <b>ayşe:</b> ayakkabılar biraz fazla olmuş bence
+              <button type="button">Yanıtla</button>
+            </li>
+            <li>
+              <b>sude:</b> @ayşe hayır aslında öyle değil
+              <!--
+                ynaıtlaya basınca ne olacak(5. 6. hafta, JS).
+              -->
+              <button type="button">Yanıtla</button>
+            </li>
+          </ul>
+
+          <!-- Yorum yazma formu -->
+          <form>
+            <label for="comment-1">Yorum yaz</label>
+            <input type="text" id="comment-1" name="comment" placeholder="Yorumun...">
+
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
+      </article>
+
+
+      <!-- ---------- KOMBİN KARTI 2 ---------- -->
+      <!-- Kart 1 ile aynı yapı. Bu tekrar, ileride neden JS ile üreteceğimizi gösteriyor. -->
+      <article>
+        <header>
+          <img src="images/avatars/celal.jpg" alt="celal profil fotoğrafı" width="40" height="40">
+          <a href="profile.html">celal</a>
+          <small>bugün 11:15</small>
+        </header>
+
+        <img src="images/fits/fit2.jpg" alt="celal'in kombini" width="300">
+
+        <p>Okul kombini</p>
+
+        <p>
+          <button type="button">Günün en iyisi seç</button>
+          <span>1 oy</span>
+        </p>
+
+        <section>
+          <h3>Yorumlar</h3>
+          <ul>
+            <li>
+              <b>sude:</b> ceket nereden?
+              <button type="button">Yanıtla</button>
+            </li>
+          </ul>
+
+          <form>
+            <label for="comment-2">Yorum yaz</label>
+            <input type="text" id="comment-2" name="comment" placeholder="Yorumun...">
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>FitCheck - Web Programlama Dersi Projesi</p>
+  </footer>
+
+</body>
+</html>
