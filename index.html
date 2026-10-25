@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitCheck - Giriş</title>
+
+</head>
+
+<body>
+
+  <header>
+    <!-- header: sayfanın üst kısmı (logo, baslık) -->
+    <h1>FitCheck</h1>
+    <p>Günün kombinini paylaş, en iyisini seç.</p>
+  </header>
+
+  <main>
+
+    
+    <section>
+      <h2>Giriş Yap</h2>
+
+      <form action="feed.html">
+        <!--
+          kullanıcıdan bilgi alan alan
+          "Giriş yap" basınca feed.html sayfasına gider
+          simdilik sifre kontrolu yok ilerde js ile gelecek
+        -->
+
+        <p>
+          <label for="username">Kullanıcı adı</label><br>
+          <!-- burdaki for ile input'un id'si aynı ki
+             ustteki yazıya tıklayınca da kutu secilsin -->
+          <input type="text" id="username" name="username" placeholder="ör. sude" required>
+          <!-- placeholder: kutu bosken gri ornek yazısı
+               required: boş bırakılırsa form gönderilmez -->
+        </p>
+
+        <p>
+          <label for="password">Şifre</label><br>
+          <input type="password" id="password" name="password" required>
+        </p>
+
+        <button type="submit">Giriş yap</button>
+        <!-- type="submit": basınca formu gönderir (action gerceklesir yani) -->
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Bu uygulama ne?</h2>
+      <p>Befakegillerkombin paylaşma uygulaması. Her gün kombinini yükle, arkadaşlarının kombinlerine yorum yap ve günün en iyisine oy ver. </p>
+     
+      <ul> <!-- sırasız liste-->
+        <li>Günde birden fazla kombin paylaşabilirsin</li>
+        <li>Arkadaşlarının kombinlerine yorum yapabilrsin</li>
+        <li>Her gün 1 oy hakkın var</li>
+        <li>Her gün paylaşarak streak'ini koru</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- sayfanın alt kısmı -->
+    <p>FitCheck - ağ tabanlı programlama projesi</p>
+  </footer>
+
+</body>
+</html>
