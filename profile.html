@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitCheck - Profil</title>
+  <link rel="icon" type="image/png" href="images/apple.png">
+</head>
+
+<body>
+
+  <header>
+    <!-- header: sayfanın üst kısmı -->
+    <h1>FitCheck</h1>
+
+    <nav>
+      <!--
+        nav: sitenin ana menüsü.
+        Şimdilik her sayfaya kopyalıyoruz.
+      -->
+      <ul>
+        <li><a href="feed.html">Akış</a></li>
+        <li><a href="profile.html">Profilim</a></li>
+        <li><a href="history.html">Geçmiş</a></li>
+        <li><a href="index.html">Çıkış</a></li>
+
+        <!-- çıkış şimdilik sadece girişe dönme -->
+      </ul>
+    </nav>
+  </header>
+
+  <main> <!-- asıl içerik -->
+
+    <!--  1. BÖLÜM: PROFİL BİLGİLERİ  -->
+    <section> <!-- Burası "profil bilgileri" bölümü. -->
+
+      <h2>Profil</h2>
+      <!-- h2: bölüm başlığı. h1 sayfanın başlığı, h2 bölümlerin başlığı. -->
+
+      <img src="images/sample-profilepic/pfp1.jpeg" alt="sude profil fotoğrafı" width="120" height="120">
+      <h3>sude</h3>
+      <!-- h3: alt başlık. Kullanıcı adı burada. -->
+
+      <p>Maximalist</p>
+      <!-- bio -->
+    </section>
+
+
+    <!--  2. BÖLÜM: İSTATİSTİKLER -->
+    <section>
+      <h2>İstatistikler</h2>
+
+      <ul> <!-- sırasız liste -->
+        <li>🔥 Streak: <strong>5 gün</strong></li>
+        <!--
+          strong: önemli metin(kalın)
+
+          Streak: arka arkaya kaç gün kombin paylaştığı. ilerde JS tarihlerden hesaplayacak.
+        -->
+        <li>🧊 Kalan streak freeze hakkı: <strong>1</strong></li>
+        <!-- Streak freeze: bir gün paylaşmazsa streak'in sıfırlanmasını engelleyen hak. -->
+        <li>🏆 Günün kazananı olma sayısı: <strong>3</strong></li>
+        <!-- kac kez kazanmıs gecmiş data -->
+      </ul>
+    </section>
+
+
+    <!-- 3. BÖLÜM: PROFİLİ DÜZENLE  -->
+    <section>
+      <h2>Profili düzenle</h2>
+      <!-- Bu bölüm sadece kendi profiline bakarken görünecek. js ile ayarlanacak -->
+
+      <form>
+        <!--
+          form: kullanıcıdan bilgi alan alan.
+          action yok: form bir yere gitmiyor.js ile ayarlanacak .
+        -->
+
+        <div class="form-group">
+          <label for="new-avatar">Yeni profil fotoğrafı</label> <br>
+          <input type="file" id="new-avatar" name="new-avatar" accept="image/*">
+          <!--  label: kutunun açıklama yazısı.for ve id eslesmeli. -->
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label><br>
+          <textarea id="bio" name="bio" rows="3" cols="40" maxlength="150">Maximalist</textarea>
+          <!--
+            sınırlar burda yazıyor ama js ile dogrulanma getiirlcek. 
+          -->
+        </div>
+
+        <button type="submit">Kaydet</button>
+        <!-- formu gonderme işlevi js -->
+      </form>
+    </section>
+
+
+    <!--  4. BÖLÜM: BUGÜNKÜ KOMBİNLERİ -->
+    <section>
+      <h2>Bugünkü kombinleri</h2>
+ 
+      <!-- ---------- KOMBİN KARTI 1 ---------- -->
+      <article>
+        <!--article: kendi başına anlamlı, tek bir içerik parçası (gonderi)-->
+
+        <p>
+          <button type="button">Sil</button>  <!-- kendi kombininde gorunecek işlev kazandırılacak -->
+        </p>
+        <img src="images/sample-fits/sample1.jpg" alt="sude'nin kombini" width="250">
+        <p>
+          Odak kolyelerde
+          <button type="button">Düzenle</button>
+          <!--type="button": formu göndermeyen düz buton. İşlevini JS verecek.-->
+        </p>
+        <p><small>09:41 · 3 oy</small></p>
+        <!--  ikincil bilgi -->
+
+
+
+        <section> 
+          <!-- yorumlar bolumu -->
+          <h3>Yorumlar</h3> 
+          <!-- h3: alt başlık -->
+
+          <ul>
+            <li>
+              <b>cevat:</b> fena
+              <button type="button">Yanıtla</button>
+            </li>
+            <li>
+              <b>azeynep:</b> cok iyi laayerlamıssın
+              <button type="button">Yanıtla</button>
+            </li>
+            <li>
+              <b>sude:</b> @zeynep saol yavrum
+              <button type="button">Yanıtla</button>
+            </li>
+          </ul>
+
+          <form>
+            <label for="comment-1">Yorum yaz</label>
+            <input type="text" id="comment-1" name="comment" placeholder="Yorumun...">
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
+      </article>
+
+<hr>
+<!-- css yazıldıktan sonra kaldırılabilir -->
+
+      <!-- ---------- KOMBİN KARTI 2 ---------- -->
+      <!-- Kart 1 ile aynı yapı-->
+      <p><button type="button">Sil</button></p>
+      <article>
+        <img src="images/sample-fits/sample11.jpg" alt="sude'nin akşam kombini" width="250">
+        <p>Akşam için değiştirdim <button type="button">Düzenle</button> </p> 
+        <p><small>18:20 · 1 oy</small></p>
+
+
+        <!-- YORUMLAR KISMI-->
+        <section>
+          <!-- section: kendi başlığı olan bir bölüm. Kartın içindeki yorumlar bölümü. -->
+          <h3>Yorumlar</h3>
+          <!-- h3: alt başlık. Kartın başlığı h2 bölümünün altında olduğu için h3 kullanıyoruz. -->
+
+          <p>Henüz yorum yok.</p>
+          <!--
+            p: paragraf. Yorum olmadığını söyleyen bilgi yazısı.
+            İleride JS yorum sayısına bakacak: yorum varsa bunun yerine ul listesini gösterecek,
+            yoksa bu yazıyı gösterecek.
+          -->
+
+        <!-- YORUMLAR KISMI-->
+        <section>
+          <h3>Yorumlar</h3>
+          <p>Henüz yorum yok.</p>
+          <!-- js ile ayarlancak yorum yoksa bu mesaj-->
+
+          <form>
+            <!-- form: içindekiler "gönderilecek bir bilgi grubu". action yok, çünkü şimdilik bir yere gitmiyor. -->
+            <label for="comment-2">Yorum yaz</label>
+            <input type="text" id="comment-2" name="comment" placeholder="Yorumun...">
+            <!--input type="text": tek satırlık yazı kutusu.
+              id="comment-p2": id sayfada BENZERSİZ olmalı-->
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
+
+      </article>
+
+      <hr>
+
+      <p><a href="history.html">Geçmiş kombinlerini gör →</a></p>
+      <!-- kullanıcının gecmis sayfası-->
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- footer: sayfanın alt kısmı. -->
+    <p>FitCheck - Web Programlama Dersi Projesi</p>
+  </footer>
+
+</body>
+</html>
