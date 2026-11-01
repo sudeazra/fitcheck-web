@@ -82,12 +82,12 @@
             </tr>
             <tr>
               <td>2</td>
-              <td>celal</td>
+              <td>cevat</td>
               <td>2</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>ali</td>
+              <td>zeynep</td>
               <td>2</td>
             </tr>
             <!-- beraberlik ornegi bu -->
@@ -109,17 +109,17 @@
         -->
 
         <header>
-          <img src="images/avatars/sude.jpg" alt="sude profil fotoğrafı" width="40" height="40">
+          <img src="images/sample-profilepic/pfp1.jpeg" alt="sude profil fotoğrafı" width="40" height="40">
         <!-- sampe 1 sude olsun pp de -->
           <a href="profile.html">sude</a>
           <!--  bu link profile.html?user=sude olacak-->
           <small>bugün 09:41</small>
         </header>
 
-        <img src="images/fits/fit1.jpg" alt="sude'nin kombini" width="300">
+        <img src="images/sample-fits/sample1.jpg" alt="sude'nin kombini" width="300">
 
 
-        <p>Bugün sade takıldım</p>
+        <p>Odak kolyelerde</p>
 
         <!-- oylama mekaniği (6. 7. hafta, JS) -->
         <p>
@@ -135,15 +135,15 @@
           <h3>Yorumlar</h3>
           <ul>
             <li>
-              <b>celal:</b> renkler çok iyi uymuş
+              <b>cevat:</b> fena
               <button type="button">Yanıtla</button>
             </li>
             <li>
-              <b>ayşe:</b> ayakkabılar biraz fazla olmuş bence
+              <b>zeynep:</b> cok iyi layerlamıssın
               <button type="button">Yanıtla</button>
             </li>
             <li>
-              <b>sude:</b> @ayşe hayır aslında öyle değil
+              <b>sude:</b> @zeynep saol yavrum
               <!--
                 ynaıtlaya basınca ne olacak(5. 6. hafta, JS).
               -->
@@ -161,19 +161,55 @@
         </section>
       </article>
 
+      <hr>
 
       <!-- ---------- KOMBİN KARTI 2 ---------- -->
       <!-- Kart 1 ile aynı yapı. Bu tekrar, ileride neden JS ile üreteceğimizi gösteriyor. -->
       <article>
         <header>
-          <img src="images/avatars/celal.jpg" alt="celal profil fotoğrafı" width="40" height="40">
-          <a href="profile.html">celal</a>
+          <img src="images/sample-profilepic/pfp5.jpeg" alt="cevat profil fotoğrafı" width="40" height="40">
+          <a href="profile.html">cevat</a>
           <small>bugün 11:15</small>
         </header>
 
-        <img src="images/fits/fit2.jpg" alt="celal'in kombini" width="300">
+        <img src="images/sample-fits/sample5.jpg" alt="cevat'ın kombini" width="300">
 
         <p>Okul kombini</p>
+
+        <p>
+          <button type="button">Günün en iyisi seç</button>
+          <span>1 oy</span>
+        </p>
+        
+
+        <section>
+          <h3>Yorumlar</h3>
+          <ul>
+            <li>
+              <b>sude:</b> waow
+              <button type="button">Yanıtla</button>
+            </li>
+          </ul>
+
+          <form>
+            <label for="comment-2">Yorum yaz</label>
+            <input type="text" id="comment-2" name="comment" placeholder="Yorumun...">
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
+      </article>
+
+      <!-- ---------- KOMBİN KARTI 3 ---------- -->
+      <article>
+        <header>
+          <img src="images/sample-profilepic/pfp1.jpeg" alt="sude profil fotoğrafı" width="40" height="40">
+          <a href="profile.html">sude</a>
+          <small>bugün 18:20</small>
+        </header>
+
+        <img src="images/sample-fits/sample11.jpg" alt="sude'nin aksam kombini" width="300">
+
+        <p>Akşam için değiştirdim</p>
 
         <p>
           <button type="button">Günün en iyisi seç</button>
@@ -182,16 +218,15 @@
 
         <section>
           <h3>Yorumlar</h3>
-          <ul>
-            <li>
-              <b>sude:</b> ceket nereden?
-              <button type="button">Yanıtla</button>
-            </li>
-          </ul>
+          <p>Henüz yorum yok.</p>
+          <!-- js ile ayarlancak yorum yoksa bu mesaj-->
 
           <form>
-            <label for="comment-2">Yorum yaz</label>
-            <input type="text" id="comment-2" name="comment" placeholder="Yorumun...">
+            <!-- form: içindekiler "gönderilecek bir bilgi grubu". action yok, çünkü şimdilik bir yere gitmiyor. -->
+            <label for="comment-3">Yorum yaz</label>
+            <input type="text" id="comment-3" name="comment" placeholder="Yorumun...">
+            <!--input type="text": tek satırlık yazı kutusu.
+              id="comment-3": id sayfada BENZERSİZ olmalı-->
             <button type="submit">Gönder</button>
           </form>
         </section>
