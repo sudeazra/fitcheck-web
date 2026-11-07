@@ -52,14 +52,7 @@
       <h2>İstatistikler</h2>
 
       <ul> <!-- sırasız liste -->
-        <li>🔥 Streak: <strong>5 gün</strong></li>
-        <!--
-          strong: önemli metin(kalın)
-
-          Streak: arka arkaya kaç gün kombin paylaştığı. ilerde JS tarihlerden hesaplayacak.
-        -->
-        <li>🧊 Kalan streak freeze hakkı: <strong>1</strong></li>
-        <!-- Streak freeze: bir gün paylaşmazsa streak'in sıfırlanmasını engelleyen hak. -->
+        <li>🔥Toplam paylaşılan kombin: <strong>N</strong></li> <!--strong: önemli metin(kalın)        -->
         <li>🏆 Günün kazananı olma sayısı: <strong>3</strong></li>
         <!-- kac kez kazanmıs gecmiş data -->
       </ul>
@@ -87,7 +80,7 @@
           <label for="bio">Bio</label><br>
           <textarea id="bio" name="bio" rows="3" cols="40" maxlength="150">Maximalist</textarea>
           <!--
-            sınırlar burda yazıyor ama js ile dogrulanma getiirlcek. 
+            sınırlar burda yazıyor ama js ile dogrulanma getirilecek. 
           -->
         </div>
 
@@ -130,7 +123,7 @@
               <button type="button">Yanıtla</button>
             </li>
             <li>
-              <b>azeynep:</b> cok iyi laayerlamıssın
+              <b>zeynep:</b> cok iyi laayerlamıssın
               <button type="button">Yanıtla</button>
             </li>
             <li>
@@ -147,30 +140,16 @@
         </section>
       </article>
 
-<hr>
-<!-- css yazıldıktan sonra kaldırılabilir -->
 
       <!-- ---------- KOMBİN KARTI 2 ---------- -->
       <!-- Kart 1 ile aynı yapı-->
-      <p><button type="button">Sil</button></p>
       <article>
+        <p><button type="button">Sil</button></p>
         <img src="images/sample-fits/sample11.jpg" alt="sude'nin akşam kombini" width="250">
         <p>Akşam için değiştirdim <button type="button">Düzenle</button> </p> 
         <p><small>18:20 · 1 oy</small></p>
 
 
-        <!-- YORUMLAR KISMI-->
-        <section>
-          <!-- section: kendi başlığı olan bir bölüm. Kartın içindeki yorumlar bölümü. -->
-          <h3>Yorumlar</h3>
-          <!-- h3: alt başlık. Kartın başlığı h2 bölümünün altında olduğu için h3 kullanıyoruz. -->
-
-          <p>Henüz yorum yok.</p>
-          <!--
-            p: paragraf. Yorum olmadığını söyleyen bilgi yazısı.
-            İleride JS yorum sayısına bakacak: yorum varsa bunun yerine ul listesini gösterecek,
-            yoksa bu yazıyı gösterecek.
-          -->
 
         <!-- YORUMLAR KISMI-->
         <section>
@@ -183,7 +162,7 @@
             <label for="comment-2">Yorum yaz</label>
             <input type="text" id="comment-2" name="comment" placeholder="Yorumun...">
             <!--input type="text": tek satırlık yazı kutusu.
-              id="comment-p2": id sayfada BENZERSİZ olmalı-->
+              id="comment-2": id sayfada BENZERSİZ olmalı-->
             <button type="submit">Gönder</button>
           </form>
         </section>
@@ -200,7 +179,7 @@
 
   <footer>
     <!-- footer: sayfanın alt kısmı. -->
-    <p>FitCheck - Web Programlama Dersi Projesi</p>
+    <p>FitCheck - ağ tabanlı programlama projesi</p>
   </footer>
 
 </body>
