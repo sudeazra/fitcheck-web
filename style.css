@@ -63,3 +63,75 @@ body {
   a {
     color: var(--turkuaz);
   }
+
+
+/* Kutu modeli: genişliğe padding ve border dahil */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Sayfa içeriği ortada */
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Kombin kartı */
+  article {
+    background-color: var(--krem);
+    border: 1px solid var(--pembe-acik);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  
+  /* Kart içindeki yorumlar bölümü */
+  article section {
+    background-color: var(--pastel-yesil);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 12px;
+  }
+  
+  /* Butonlar */
+  button {
+    background-color: var(--pembe-acik);
+    color: var(--yazi);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+
+
+  /* Sayfa başlığı ve alt bilgi ortada */
+body > header,
+footer {
+  text-align: center;
+}
+
+/* Ortak menü: Flexbox ile yan yana */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 8px 16px;
+  background-color: var(--turkuaz-acik);
+  color: var(--yazi);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--pembe-acik);
+}
