@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitCheck - Geçmiş</title>
+  <link rel="icon" type="image/png" href="images/apple.png">
+</head>
+
+<body>
+
+  <header>
+    <h1>FitCheck</h1>
+
+    <nav>
+      <ul>
+        <li><a href="feed.html">Akış</a></li>
+        <li><a href="profile.html">Profilim</a></li>
+        <li><a href="history.html">Geçmiş</a></li>
+        <li><a href="index.html">Çıkış</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. BÖLÜM: KULLANICI SEÇİMİ -->
+    <section>
+      <h2>Kimin geçmişi?</h2>
+
+      <form>
+        <!-- seçilen kullanıcının geçmişini js gösterecek (9. hafta) -->
+        <label for="history-user">Kullanıcı seç</label>
+        <select id="history-user" name="history-user">
+          <option value="sude" selected>sude</option>
+          <option value="gece">gece</option>
+          <option value="zeynep">zeynep</option>
+          <option value="bahar">bahar</option>
+          <option value="cevat">cevat</option>
+          <option value="eylul">eylul</option>
+          <option value="derin">derin</option>
+          <option value="ruya">ruya</option>
+          <option value="oyku">oyku</option>
+          <option value="peri">peri</option>
+        </select>
+
+        <button type="submit">Göster</button>
+      </form>
+    </section>
+
+
+    <!-- 2. BÖLÜM: GEÇMİŞ KOMBİNLER -->
+    <section>
+      <h2>Geçmiş kombinler</h2>
+      <!-- sahte veri, her gün ayrı section. js ile veriden gelecek -->
+
+      <!-- GÜN 1 -->
+      <section>
+        <h3>Dün</h3>
+
+        <article>
+          <img src="images/sample-fits/sample12.jpg" alt="sude'nin brunch kombini" width="250">
+          <p>Hafta sonu brunch için</p>
+          <p><small>10:05 · 4 oy</small></p>
+          <p><strong>🏆 Günün kazananı</strong></p>
+          <!-- rozet oylardan hesaplanacak -->
+
+          <section>
+            <h4>Yorumlar</h4>
+            <!-- geçmişte yorumlar sadece okunur -->
+            <ul>
+              <li><b>gece:</b> renkler cok iyi olmus</li>
+              <li><b>cevat:</b> bugunun kazananı belli</li>
+              <li><b>sude:</b> @cevat diyosunn</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+
+      <!-- GÜN 2 -->
+      <section>
+        <h3>2 gün önce</h3>
+
+        <article>
+          <img src="images/sample-fits/sample13.jpg" alt="sude'nin trençkot kombini" width="250">
+          <p>Mor</p>
+          <p><small>08:50 · 1 oy</small></p>
+
+          <section>
+            <h4>Yorumlar</h4>
+            <p>Henüz yorum yok.</p>
+          </section>
+        </article>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>FitCheck - ağ tabanlı programlama projesi</p>
+  </footer>
+
+</body>
+</html>
