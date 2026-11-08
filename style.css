@@ -1,0 +1,65 @@
+/* FitCheck - ortak stil dosyası */
+
+body {
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bej);
+    color: var(--yazi);
+  }
+  
+  h1 {
+    font-family: "Noteworthy", "Snell Roundhand", "Ink Free", "Segoe Print", "Segoe Script", "Brush Script MT", cursive;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-family: "Chalkboard SE", "Chalkboard", "Comic Sans MS", "Segoe Print", sans-serif;
+    font-size: 1.6rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  small {
+    font-size: 0.85rem;
+  }
+
+
+
+  
+/* Renk paleti */
+:root {
+    --bej: #f5ede0;
+    --krem: #fffaf4;
+    --yazi: #3a3330;
+    --pembe-koyu: #b03a66;
+    --pembe-acik: #f8c8d8;
+    --turkuaz: #1a7a71;
+    --turkuaz-acik: #5cc4b8;
+    --fistik: #c5dd8f;
+    --pastel-yesil: #cdebd3;
+    --acik-mavi: #cfe7f3;
+  }
+  
+  h1,
+  h2 {
+    color: var(--pembe-koyu);
+  }
+  
+  a {
+    color: var(--turkuaz);
+  }
