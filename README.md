@@ -21,13 +21,15 @@ Sunucu, veritabanı veya kurulum gerektirmez.
 | `history.html` | Kullanıcı seçimi, tarihe göre geçmiş kombinler, yorumlar, günün kazananı rozeti |
 
 ## Klasör yapısı
+- `style.css` — bütün sayfaların ortak stil dosyası
+- `seed.js` — başlangıç (örnek) verisi: 10 demo kullanıcı
 - `images/sample-fits/` — örnek kombin fotoğrafları (kullanıcı N'in kombinleri: sampleN, sampleN1, sampleN2 …)
 - `images/sample-profilepic/` — profil fotoğrafları (pfp1 … pfp10)
 - `images/apple.png` — site ikonu (favicon)
 
 ## Demo kullanıcıları
 sude, gece, zeynep, bahar, cevat, eylul, derin, ruya, oyku, peri
-(Şifreler JavaScript giriş kontrolü yazıldığında — 4. hafta — buraya eklenecek.)
+Şifreler: kullanıcı adı + 123 (ör. sude → sude123). Giriş kontrolü 5. haftada eklenecek.
 
 ## Notlar
 - Şifreler yalnızca demo içindir, gerçek şifre değildir.
@@ -49,5 +51,10 @@ sude, gece, zeynep, bahar, cevat, eylul, derin, ruya, oyku, peri
 ### Hafta 3 (2–8 Kasım)
 - Yapılanlar: `history.html` yazıldı (kullanıcı seçimi, tarihe göre gruplanmış geçmiş kombinler, "Günün kazananı" rozeti, sadece okunur yorumlar); böylece 4 sayfa tamamlandı. Harici `style.css` oluşturulup bütün sayfalara bağlandı: renk paleti (CSS değişkenleri), yazı tipleri, kutu modeli ile kart görünümü ve kartlar arası boşluk. Ortak menü Flexbox ile yatay hale getirildi.
 - Düzeltmeler: profil sayfasındaki yorum bölümü hatası ve Sil butonunun yeri düzeltildi, streak kaldırılıp yerine toplam paylaşılan kombin sayısı eklendi, footer'lar ortaklaştırıldı, kartlar arasındaki `<hr>` çizgileri kaldırıldı.
-- Plandan sapma: akıştaki "dünün kazananları" tablosu, oy verildiğinde anında değişsin diye "Bugünün sıralaması" oldu; tabloya kombin fotoğrafı sütunu eklendi. Günün kesin kazananı geçmiş sayfasında rozetle görünüyor.
+Akıştaki "dünün kazananları" tablosu, oy verildiğinde anında değişsin diye "Bugünün sıralaması" oldu; tabloya kombin fotoğrafı sütunu eklendi. Günün kesin kazananı geçmiş sayfasında rozetle görünüyor.
 - Öğrenilenler: `select`/`option`, CSS seçicileri, CSS değişkenleri, kutu modeli (margin, border, padding), Flexbox.
+
+### Hafta 4
+- Yapılanlar: Akıştaki kombin kartı başlığı ve profil bilgisi Flexbox ile düzenlendi; profil sayfasındaki bölümler kart görünümüne alındı; geçmiş sayfasında günler Grid ile iki sütuna dizildi; "Bugünün sıralaması" tablosuna stil verildi; medya sorgularıyla telefon görünümü düzenlendi (geçmiş tek sütun, başlık küçülüyor, form alanları ekrandan taşmıyor). JavaScript başlangıcı: 10 demo kullanıcının bilgileri `seed.js` dosyasında tanımlandı ve giriş sayfasına bağlandı.
+- Plandan sapma: giriş formu doğrulaması ve oturum açma/kapatma 5. haftaya kaydırıldı.
+- Öğrenilenler: Flexbox hizalama (`align-items`), class seçicisi, Grid (`grid-template-columns`, `fr`), tablo stili (`border-collapse`), medya sorguları, JavaScript nesne ve dizi, tarayıcı konsolu.
