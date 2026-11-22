@@ -53,6 +53,7 @@ body {
     --fistik: #c5dd8f;
     --pastel-yesil: #cdebd3;
     --acik-mavi: #cfe7f3;
+    --yazi-soluk: #6e6360;
   }
   
   h1,
@@ -134,4 +135,128 @@ nav a {
 
 nav a:hover {
   background-color: var(--pembe-acik);
+}
+
+
+
+/* Kombin kartı başlığı: avatar solda, isim ve saat sağda alt alta */
+article > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+article > header img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+article > header a {
+  display: block;
+  font-weight: bold;
+  color: var(--yazi);
+  text-decoration: none;
+}
+
+article > header a:hover {
+  text-decoration: underline;
+}
+
+article > header small {
+  display: block;
+  color: var(--yazi-soluk);
+}
+
+
+/* Profil sayfası: bölümler kart görünümünde */
+.kart {
+  background-color: var(--krem);
+  border: 1px solid var(--pembe-acik);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.kart h2 {
+  margin-top: 0;
+}
+
+/* Profil bilgisi: foto solda, isim ve bio sağda */
+.profil-kart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profil-kart img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profil-kart h3,
+.profil-kart p {
+  margin: 0;
+}
+
+.profil-kart h3 {
+  font-size: 1.5rem;
+}
+
+
+/* Geçmiş sayfası: günler Grid ile 2 sütun */
+.gecmis-gunler {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.gecmis-gunler h2 {
+  grid-column: 1 / -1;
+}
+
+
+/* Bugünün sıralaması tablosu */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--krem);
+}
+
+th,
+td {
+  border: 1px solid var(--pembe-acik);
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+thead th {
+  background-color: var(--acik-mavi);
+}
+
+td img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+
+/* Mobil uyum: ekran 600px'ten darsa */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .gecmis-gunler {
+    grid-template-columns: 1fr;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input {
+    max-width: 100%;
+  }
 }
