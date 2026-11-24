@@ -1,3 +1,6 @@
+NOTICE: 4.HAFTA VIDEOSU AKSILIKLERDEN DOLAYI 22KASIM 23.59'DA YUKLENEMEYIP 23 KASIM TARIHINDE YUKLENDI 
+ama commitler ve yapılanların heps 22 kasımda tamamlandı. commit geçmişinden bakılabilir.
+
 # FitCheck
 
 Küçük bir arkadaş grubunun günlük kombinlerini paylaştığı, birbirinin kombinine
